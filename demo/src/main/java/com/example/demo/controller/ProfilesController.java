@@ -21,12 +21,7 @@ public class ProfilesController {
         this.profileService = profileService;
     }
 
-    @GetMapping("/getProfilesByCountry/{country}")
-    public List<Profile> getProfilesByCountry(@PathVariable String country) {
-        return profileService.getProfilesByCountry(country);
-    }
-
-    @GetMapping("/getAllProfiles")
+    @GetMapping("/profiles")
     public List<Profile> getAllProfiles() {
         return profileService.getAllProfiles();
     }
