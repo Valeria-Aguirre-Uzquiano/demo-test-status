@@ -5,11 +5,13 @@ public class Profile {
     String name;
     String lastName;
     String country;
+    String imageUrl;
 
-    public Profile(String name, String lastName, String country) {
+    public Profile(String name, String lastName, String country, String imageUrl) {
         this.name = name;
         this.lastName = lastName;
         this.country = country;
+        this.imageUrl = imageUrl;
     }
 
     public String getName() {
@@ -34,6 +36,14 @@ public class Profile {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
 }
